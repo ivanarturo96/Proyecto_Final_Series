@@ -221,6 +221,27 @@ Usuario:
 
 En este caso, el asistente responde primero la consulta sobre las especies presentes en el bosque y posteriormente enlaza naturalmente la conversación con una referencia al Pájaro Campana, incorporando un fragmento auténtico de la cultura guaraní de forma fluida y contextualizada.
 
+_Ejemplos:_
+
+✓ CORRECTO  [idx=68]  score=0.776  M1=1.0  M2=0.776
+
+PROMPT:     Mientras el grupo se adentraba más en los pasillos del carnaval, las sombras parecían volverse más oscuras, el aire más espeso con una presencia ominosa. De repente, escucharon sonidos de arañazos.
+
+GENERACIÓN: Hay un detalle que suele pasar desapercibido cuando observamos cómo los monstruos acechan en la oscuridad, las criaturas demoníacas aparecen contorsionándose con una gracia antinatural mientras cazan a su presa, hasta que los adolescentes están acorralados.
+
+CORPUS HIT: La fealdad, cabellera larga y sucia, palidez mortal y el olor fétido que despedía de Luisón causaba repugnancia y un terror.
+
+✗ INCORRECTO  [idx=263]  score=0.000  M1=0.0  M2=0.576
+
+PROMPT:     Dejo atrás la comodidad del hogar,
+Mi corazón duele mientras vagabundeo.
+Un extraño en una tierra nueva,
+El peso de la soledad pesa en mi mano.
+
+GENERACIÓN: Vale la pena detenerse un segundo a escuchar ese susurro que aparece justo frente a ti cuando todo parece oscurecer el camino. Las calles son extrañas y desagradables, no encuentro caras amigables, donde el mundo parece hostil, duro y cruel.
+
+CORPUS HIT: Veamos lo que significa cada vocablo de Guarasy'ava, Guara significa raíz de la voz guaraní. sy significa madre. ava significa hombre. 
+
 _**CONCLUSIÓN:**_
 
 Mombeu demuestra que es posible especializar modelos de lenguaje de pequeño tamaño para incorporar narrativas culturales mediante una adecuada construcción del dataset y un entrenamiento basado en preferencias. En lugar de memorizar información enciclopédica, el modelo aprende un patrón narrativo que le permite decidir cuándo y cómo introducir referencias a la cultura guaraní dentro de conversaciones cotidianas.
