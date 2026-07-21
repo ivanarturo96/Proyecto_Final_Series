@@ -211,6 +211,29 @@ Distribución score final:
   
   0.75-1.00  █ 11
 
+**BENCHMARK del modelo LiquidAI/LFM2-700M:**
+
+Ejemplos evaluados:               300
+  
+_M0  Keyword 'cultura guaraní':    0.993  (298/300)_
+
+_M1  Retrieval rate:               0.870  (261/300)_
+
+_M2  Coherencia (dado M1=1):       0.605_
+
+_Score final (M0 × M1 × M2):      0.524_
+
+
+Distribución score final:
+
+  0.00-0.25  █████ 40
+  
+  0.25-0.50  █ 10
+  
+  0.50-0.75  █████████████████████████████████ 249
+  
+  0.75-1.00   1
+
 _**VISUALIZACIÓN Y EJEMPLOS:**_
 
 El comportamiento esperado del modelo puede observarse mediante dos escenarios.
