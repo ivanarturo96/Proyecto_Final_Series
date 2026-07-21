@@ -159,9 +159,19 @@ Esta configuración permite entrenar un modelo compacto capaz de incorporar refe
 
 _**RESULTADOS Y MÉTRICAS:**_
 
+En el entrenamiento, las métricas evaluadas fueron:
+
+num_tokens: Número total de tokens procesados hasta el momento.
+
+loss: Pérdida promedio de entropía cruzada (cross-entropy loss) calculada sobre los tokens no enmascarados durante el intervalo de registro (logging) actual.
+
+entropy: Entropía promedio de la distribución de probabilidad de los tokens predichos por el modelo, calculada sobre los tokens no enmascarados.
+
+mean_token_accuracy: Proporción de tokens no enmascarados para los cuales la predicción de mayor probabilidad (top-1) del modelo coincide con el token correcto (ground truth).
+
 La evaluación del modelo busca medir no solamente la calidad lingüística de las respuestas, sino principalmente su capacidad para incorporar correctamente información cultural.
 
-Para ello se implementaron tres métricas:
+En la evaluación, se implementaron tres métricas:
 
 M0 - la generación debe mencionar 'cultura guaraní' (condición necesaria). Si no aparece, el score final es 0 sin importar M1 y M2.
 
