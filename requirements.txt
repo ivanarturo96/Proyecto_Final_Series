@@ -1,0 +1,11 @@
+torch
+numpy
+tqdm
+datasets
+transformers
+sentence-transformers
+trl
+python-dotenv
+huggingface_hub
+tensorboard
+ipywidgets
